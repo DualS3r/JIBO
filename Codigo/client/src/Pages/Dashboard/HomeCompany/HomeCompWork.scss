@@ -1,0 +1,9 @@
+@use "../../../Style/variable" as v;
+
+.sect2 {
+  background-color: v.$red;
+  color: v.$white;
+  padding: 0;
+}
+
+

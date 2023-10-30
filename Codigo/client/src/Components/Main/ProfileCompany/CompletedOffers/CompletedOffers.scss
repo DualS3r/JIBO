@@ -1,0 +1,149 @@
+@use "../../../../Style/variable" as v;
+
+.add-button{
+  font-size: large;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+
+.cardOffer{
+  border: 1px solid v.$lightgrey;
+  border-radius: 20px;
+  padding: 3vh 4vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  p{
+    margin-bottom: 8px;
+  }
+
+  .lines{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h3{
+    color: v.$frose;
+  }
+}
+
+.dropButton{
+  border: 2px solid v.$frose;
+  border-radius: 5px;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: .8em 1.4em;
+  padding-right: 4.7em;
+  background: #009ED8;
+  border: none;
+  color: white;
+  transition: .2s;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 1.2em;
+    text-align: center;    
+    transition: .2s;
+    transform-origin: 50% 60%;
+  }
+  &:before {
+    background: fadeout(#000, 90%);
+  }
+  &:hover {
+    background: darken(#009ED8, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#009ED8, 30%);
+    outline: none;
+  }
+}
+
+.button {
+  min-width: 15em;
+  border-radius: 15px;
+}
+
+.delete {
+  background: #FE5F55;
+  &:hover {
+    background: darken(#FE5F55, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#FE5F55, 30%);
+  }
+  &:after {
+    content: "\f1f8";
+  }
+  &:hover:after {
+    -webkit-animation: wiggle .05s alternate ease infinite;
+    animation: wiggle .05s alternate ease infinite;
+  }
+}
+
+.renove { 
+  background: #139675;
+  &:hover {
+    background: darken(#139675, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#139675, 20%);
+  }
+  &:after {
+    content: "\f1b8";
+  }
+  &:hover:after {
+    -webkit-animation: bounceright .3s alternate ease infinite;
+    animation: bounceright .3s alternate ease infinite;
+  }
+
+}
+
+.edit {
+  &:after {
+    content:"\f044";
+  }
+  &:hover:after {
+    -webkit-animation: none;
+    -webkit-transform: scale(1.4);
+    animation: none;
+    transform: scale(1.4);
+  }
+}
+
+
+@-webkit-keyframes bounceright {
+  from { -webkit-transform: translateX(0); }
+  to   { -webkit-transform: translateX(3px); }
+}
+
+@-webkit-keyframes wiggle {
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(30deg); }
+}
+
+@keyframes bounceright {
+  from { transform: translateX(0); }
+  to   { transform: translateX(3px); }
+}
+
+@keyframes wiggle {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(30deg); }
+}

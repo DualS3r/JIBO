@@ -1,0 +1,23 @@
+@use "../../../Style/variable" as v;
+.btn-primary{
+  color: v.$black;
+  background-color: v.$white !important;
+  border: 1px solid v.$red;
+}
+
+.post_ppal{
+  /* background-color: v.$red; */
+  border: 5px solid v.$red;
+  box-shadow: 0 0 10px 0px black;
+  padding: 3vh;
+  border-radius: 1rem;
+}
+
+.ppal-height2{
+  min-height: calc(100dvh - 260px);
+  color: black;
+}
+
+.ppal-height3{
+  min-height: calc(100dvh - 260px);
+}

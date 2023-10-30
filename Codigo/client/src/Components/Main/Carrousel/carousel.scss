@@ -1,0 +1,29 @@
+.ppal-carrousel{
+  width: 100%;
+  aspect-ratio: 2/1;
+  
+  .carousel-inner{
+    box-shadow: 0 0 10px 0px black;
+  }
+
+  .carousel-control-prev-icon{
+    display: none;
+  }
+
+  .carousel-control-next-icon{
+    display: none;
+  }
+
+  .carousel-indicators{
+    display: none;
+  }
+
+  img{
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+}
+

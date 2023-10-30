@@ -1,0 +1,74 @@
+@use "../../Style/variable" as v;
+.zDelante{
+  z-index: 1;
+  height: 80px;
+
+}
+
+.ppal-footer{
+  /* height: 100px; */
+  background-color: v.$grey ;
+  position: relative;
+  z-index: 0;
+
+  
+  
+  
+
+  img{
+    width: 30px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  img:hover{
+    transform: rotate(20deg) scale(110%);
+  }
+
+  h6{
+    color: v.$white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  h6:hover{
+    color: v.$rose;
+  }
+  h5{
+    color: v.$white;
+  }
+
+}
+
+.wave {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  background: v.$grey;
+  top: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: v.$grey;
+  left: -3%;
+  bottom: 40%;
+}
+.wave::after {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: 0%;
+  bottom: 60%;
+}
+
+

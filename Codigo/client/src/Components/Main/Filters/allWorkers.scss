@@ -1,0 +1,190 @@
+@use "../../../Style/variable" as v;
+
+.form_hr_filter{
+    width: 100%;
+    border: 1px solid v.$rose;
+
+}
+
+.icoLupa{
+    width: 30px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.add-button{
+  font-size: large;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+
+.cardsCont2{ 
+  padding: 1vh 3vw;
+}
+
+.cardAllWorkers{
+  border: 1px solid v.$lightgrey;
+  border-radius: 20px;
+  padding: 3vh 4vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  p{
+    margin-bottom: 8px;
+  }
+
+  .lines{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h3{
+    color: v.$frose;
+  }
+}
+
+.dropButton{
+  border: 2px solid v.$frose;
+  border-radius: 5px;
+}
+
+.button1 {
+  display: inline-block;
+  border-radius: 15px;
+  font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: .8em 1.4em;
+  padding-right: 4.7em;
+  background: #009ED8;
+  border: none;
+  color: white;
+  transition: .2s;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 1.2em;
+    text-align: center;    
+    transition: .2s;
+    transform-origin: 50% 60%;
+  }
+  &:before {
+    background: fadeout(#000, 90%);
+  }
+  &:hover {
+    background: darken(#009ED8, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#009ED8, 30%);
+    outline: none;
+  }
+}
+
+.button1 {
+  min-width: 15em;
+}
+
+.delete {
+  border-radius: 15px;
+  background: #FE5F55;
+  &:hover {
+    background: darken(#FE5F55, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#FE5F55, 30%);
+  }
+  &:after {
+    content: "\f1f8";
+  }
+  &:hover:after {
+    -webkit-animation: wiggle .05s alternate ease infinite;
+    animation: wiggle .05s alternate ease infinite;
+  }
+}
+
+.complete { 
+  border-radius: 15px;
+  background: #139675;
+  &:hover {
+    background: darken(#139675, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#139675, 20%);
+  }
+  &:after {
+    content: "\f00c";
+  }
+  &:hover:after {
+    -webkit-animation: bounceright .3s alternate ease infinite;
+    animation: bounceright .3s alternate ease infinite;
+  }
+
+}
+
+.email {
+  border-radius: 15px;
+  background: #C673B3;
+  &:hover {
+    background: darken(#C673B3, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#C673B3, 20%);
+  }
+  &:after {
+    content: "\F0E0";
+  }
+  &:hover:after {
+    -webkit-animation: none;
+    -webkit-transform: skew(-20deg);
+    animation: none;
+    transform: skew(-20deg);
+    text-indent: .1em;
+  }
+}
+
+.appliers {
+  border-radius: 15px;
+  &:after {
+    content:"\f183";
+  }
+  &:hover:after {
+    -webkit-animation: none;
+    -webkit-transform: scale(1.4);
+    animation: none;
+    transform: scale(1.4);
+  }
+}
+
+
+@-webkit-keyframes bounceright {
+  from { -webkit-transform: translateX(0); }
+  to   { -webkit-transform: translateX(3px); }
+}
+
+@-webkit-keyframes wiggle {
+  from { -webkit-transform: rotate(0deg); }
+  to   { -webkit-transform: rotate(30deg); }
+}
+
+@keyframes bounceright {
+  from { transform: translateX(0); }
+  to   { transform: translateX(3px); }
+}
+
+@keyframes wiggle {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(30deg); }
+}

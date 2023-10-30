@@ -1,0 +1,40 @@
+@use "./variable" as v;
+
+
+//Extends
+%ppal-button{
+    color: v.$black;
+    background-color: v.$rose;
+    border: 0;
+    border-radius: 10%;
+    box-shadow: 0 0 3px 0 black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+%hover-white{
+    color: v.$white;
+    background-color: v.$frose;
+    transform: scale(110%);
+}
+
+//Mixin
+@mixin ppal-button($ph, $pw){
+    padding: $ph $pw;
+    @extend %ppal-button;
+
+}
+
+@mixin hover-white{
+    @extend %hover-white; 
+}
+
+@mixin profile-img($w,$wBorder){
+    width: $w;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: $wBorder solid v.$rose;
+    object-fit: cover;
+    object-position: center; 
+}
+

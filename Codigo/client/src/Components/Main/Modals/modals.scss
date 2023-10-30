@@ -1,0 +1,28 @@
+@use "../../../Style/variable" as v;
+
+
+.modal-content{
+    color: v.$white;
+    background-color: v.$red;
+
+    input {
+        border-radius: 0.5rem;
+    }
+}
+
+
+.btn-modal{ 
+    padding: 1vh 2vw;
+    background-color: white;
+    border-radius: 2.5rem;
+}
+
+.linkNav-Modal{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.warningText{
+    color: white;
+}
+

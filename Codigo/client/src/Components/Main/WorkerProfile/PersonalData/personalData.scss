@@ -1,0 +1,15 @@
+@use "../../../../Style/variable" as v;
+
+h5 {
+  color: v.$grey;
+  margin-bottom: 0;
+  padding: 1vh;
+}
+
+.hTextArea{
+  height: 80px;
+  resize: none;
+  border-radius: 0.5rem;
+  
+}
+

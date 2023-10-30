@@ -1,0 +1,63 @@
+@use "../../Style/variable" as v;
+
+.adminCompany{
+  background-image: url("/images/admin/empresario.jpg"); 
+}
+
+.adminWorker{
+  background-image: url("/images/admin/trabajador.jpg");
+}
+
+.adminOffer{
+  background-image: url("/images/admin/Ofertas.jpg");
+}
+
+.cardAdmin{
+  color: white;
+  text-shadow: 0 0 5px black;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 0 black;
+  background-size: cover;
+  background-position: center;
+  width: 20vw;
+  height: 50vh;
+  padding: 0 5vw;
+  transition: 1s;
+}
+
+.cardAdmin:hover{
+  transform: scale(110%);
+}
+
+.h4AdminProfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.645);
+  padding: 1vw;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 576px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .larger {
+    width: 60%;
+  }
+
+  .h4AdminProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.645);
+    padding: 1vw;
+    border-radius: 50%;
+    width: 25%;
+    aspect-ratio: 1/1;
+  }
+}

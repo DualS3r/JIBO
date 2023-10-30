@@ -1,0 +1,140 @@
+@use "../../Style/variable" as v;
+@use "../../Style/mixin" as m;
+
+.ppal-navbar{
+  height: 100px;
+  background-color: v.$red;
+
+  .nav-link {
+    color: v.$white ;
+  }
+  .navbar-brand{
+    color: v.$white;
+  }
+}
+
+.noneText2{
+  display: none;
+}
+
+.noneImg{
+  display: none;
+}
+
+.viewImg{
+  display: block;
+}
+
+.ppal-logo{
+  height: 100px;
+  background-color: v.$red;
+
+  
+}
+
+.format-textLogo{
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  
+}
+
+.format-homeLogo{
+  margin-right: 30vw;
+}
+
+@media screen and (max-width: 576px) {
+  .noneText{
+    display: none;
+  }
+  .noneText2{
+    display: block;
+  }
+  .noneImg{
+    display: block;
+  }
+  .viewImg{
+    display: none;
+  }
+
+  .navbar-nav-user{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid v.$grey;
+  }
+
+  .nav-link, .navbar-brand{
+    color: black !important;
+  }
+
+  .navbar-toggler{
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .noneImg{
+    display: block;
+  }
+  .viewImg{
+    display: none;
+  }
+
+  .navbar-nav-user{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid v.$grey;
+    box-shadow: 0 0 2px 0 black inset;
+    color: black;
+  }
+
+  .nav-link, .navbar-brand{
+    color: black !important;
+  }
+
+  .navbar-toggler{
+    background-color: white;
+  }
+}
+
+.ppal-navbar2{
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  background-color: v.$white;
+  box-shadow: 0 0 5px 2px black;
+  
+}
+
+.imgBanner{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.buttom3{
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 1rem;
+  border: 1px solid v.$red;
+  transition: 1s;
+}
+
+.buttom3:hover{
+  transition: 0.5s;
+  background-color: v.$rose;
+  border: 0;
+  transform: scale(110%);
+}

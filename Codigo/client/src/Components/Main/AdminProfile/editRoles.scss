@@ -1,0 +1,24 @@
+@use "../../../Style/variable" as v;
+
+.styleButtonDelete{
+    background-color: white;
+    border: 0;
+    color: v.$rose;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.styleButtonDelete:hover{
+    transform: scale(120%);
+}
+
+.formtSp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 1rem;
+}

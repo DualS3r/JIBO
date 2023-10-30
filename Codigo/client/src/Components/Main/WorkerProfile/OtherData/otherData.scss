@@ -1,0 +1,14 @@
+@use "../../../../Style/variable" as v;
+
+h5{
+  color:v.$lightgrey;
+}
+
+.wInput100{
+  width: 100%;
+}
+
+.hTextArea{
+  height: 80px;
+  resize: none;
+}
